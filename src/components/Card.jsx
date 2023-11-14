@@ -1,6 +1,12 @@
 import React from "react";
-import "./style.css";
+import Home from "../Home";
+import "../style.css";
+import { Link } from "react-router-dom";
 
 export default function Card(props) {
-  return <div className="card">{props.text}</div>;
+  return (
+    <Link to={props.route}>
+      <div className="card bg-gray-300">{props.text}</div>
+    </Link>
+  );
 }
