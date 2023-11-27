@@ -16,7 +16,12 @@ const Layout = () => {
         <div className="header-logo">
           <Link to="/">LOGO HERE</Link>
         </div>
-        <div className="header-profile">profile</div>
+        <Link to="/profile">
+          <div className="header-profile">
+            <img className="profile-pic-default" src="/icons/sunglasses.png" />
+            <span>Profile</span>
+          </div>
+        </Link>
       </div>
       <div className="body bg-gray-500">
         <Outlet />

@@ -10,7 +10,7 @@ export default function Header() {
         <i className="material-icons">computer</i>
       </div>
       <div className="header-logo">LOGO HERE</div>
-      <div className="header-profile">profile</div>
+      <div className="header-profile"></div>
     </div>
   );
 }

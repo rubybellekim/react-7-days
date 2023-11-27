@@ -5,6 +5,7 @@ export default {
     "./src/components/Footer.jsx",
     "./src/components/Header.jsx",
     "./src/components/Card.jsx",
+    "./src/components/Timer.jsx",
     "./src/Home.jsx",
     "./src/Layout.jsx",
   ],
