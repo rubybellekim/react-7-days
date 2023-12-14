@@ -16,13 +16,13 @@ const Home = () => {
     },
     {
       id: 20,
-      text: "20 jump",
-      route: "/20-santa-jump",
+      text: "20 santa",
+      route: "/20-which-santa",
     },
     {
       id: 21,
-      text: "21 tree",
-      route: "/21-deco-tree",
+      text: "21 cookie",
+      route: "/21-fortune-cookie",
     },
     {
       id: 22,
@@ -32,7 +32,7 @@ const Home = () => {
     {
       id: 23,
       text: "23 cake",
-      route: "/23-deco-cake",
+      route: "/23-fortune-cake",
     },
     {
       id: 24,

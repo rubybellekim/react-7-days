@@ -8,18 +8,17 @@
 /* Header */
 
 .header {
-    padding: 30px;
+    padding: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     height: 10%;
     margin-bottom: 20px;
+    justify-content: flex-start;
 }
 
-.profile-pic-default {
-    width: 50px;
-    
+.header-logo {
+    margin-left: 45%;
 }
 
 /* Body */

@@ -1,9 +1,8 @@
-import DecoCake from "./pages/DecoCake.jsx";
-import DecoTree from "./pages/DecoTree.jsx";
+import FortuneCookie from "./pages/FortuneCookie.jsx";
 import Joke from "./pages/Joke.jsx";
 import MyElf from "./pages/MyElf.jsx";
-import Profile from "./pages/Profile.jsx";
-import SantaJump from "./pages/SantaJump.jsx";
+import WhichSanta from "./pages/WhichSanta.jsx";
+import FortuneCake from "./pages/FortuneCake.jsx";
 import Tenzies from "./pages/Tenzies.jsx";
 import Layout from "./Layout.jsx";
 import Home from "./Home.jsx";
@@ -16,13 +15,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="profile" element={<Profile />} />
           <Route path="18-joke" element={<Joke />} />
           <Route path="19" element={<Home />} />
-          <Route path="20-santa-jump" element={<SantaJump />} />
-          <Route path="21-deco-tree" element={<DecoTree />} />
+          <Route path="20-which-santa" element={<WhichSanta />} />
+          <Route path="21-fortune-cookie" element={<FortuneCookie />} />
           <Route path="22-tenzies" element={<Tenzies />} />
-          <Route path="23-deco-cake" element={<DecoCake />} />
+          <Route path="23-fortune-cake" element={<FortuneCake />} />
           <Route path="24-my-elf" element={<MyElf />} />
         </Route>
       </Routes>

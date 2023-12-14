@@ -3,12 +3,16 @@ import "./pages.css";
 
 export default function Joke() {
   const [meme, setMeme] = useState({
-    topText: "",
-    bottomText: "",
-    randomImage: "memes/2-dogs.jpeg",
+    topText: "THANK GOODNESS YOU'RE HOME...",
+    bottomText: "...THE CHRISTMAS TREE FAINTED.",
+    randomImage: "memes/dog-and-tree.jpeg",
   });
 
   const imgList = [
+    "goldens",
+    "cat-dog",
+    "dog-and-tree",
+    "cat-dog2",
     "2-dogs",
     "bear-christmas",
     "bunnies",
@@ -69,6 +73,7 @@ export default function Joke() {
   return (
     <main className="joke">
       <div className="form">
+        <p className="form--p">SETUP</p>
         <input
           type="text"
           placeholder="Top Text"
@@ -77,6 +82,7 @@ export default function Joke() {
           value={meme.topText}
           onChange={handleChange}
         />
+        <p className="form--p">PUNCHLINE</p>
         <input
           type="text"
           placeholder="Bottom Text"
