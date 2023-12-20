@@ -1,5 +1,34 @@
-/* Joke */
+/* Intro */
+.intro {
+  display: flex;
+  flex-direction: row;
+  background-color: aliceblue;
+  min-width: 450px;
+}
 
+.elf {
+  display: flex;
+  align-items: center;
+}
+
+.nextBtn {
+  font-size: 0.8em;
+}
+
+.introImg {
+  padding: 5px;
+  min-width: 50px;
+  margin-right: 10px;
+}
+
+.introBtn {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Joke */
 .joke {
     padding: 10px;
   }
@@ -10,16 +39,9 @@
     gap: 17px;
     margin-bottom: 17px;
   }
-
-  .form--p {
-    grid-column: 1 / 2;
-    font-size: 0.8em;
-    align-self: center;
-    color: white;
-  }
   
   .form--input {
-    grid-column: 2 / -1;
+    grid-column: 1 / -1;
     font-family: "Karla", sans-serif;
     border-radius: 5px;
     border: 1px solid #D5D4D8;
@@ -183,7 +205,88 @@
   }
 
 
- /* DecoTree */
+ /* Santa */
+
+.santaTest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F5F5;
+  max-height: 1200px;
+  max-width: 900px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.startPageLayout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.santa-title {
+  font-size: 2em;
+}
+
+.santa-description {
+  font-size: 0.8em;
+}
+
+.questionLayout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.questionItemLayout {
+  text-align: center;
+  padding-bottom: 30px;
+
+}
+
+.restartBtn {
+  padding-top: 30px;
+  font-size: 1.8em;
+}
+
+.questionList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.resultPage, .resultSanta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.santa-img {
+  width: 500px;
+}
+
+.santa-name {
+  margin-top: 15px;
+}
+
+.santa-intro {
+  margin-top: 10px;
+}
+
+.santa-contents {
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
 
 
 /* media size */

@@ -1,7 +1,11 @@
-import { React, useState, useEffect } from "react";
+import { React, useState } from "react";
+import { FaAngleDoubleRight } from "react-icons/fa";
+import { TypeAnimation } from "react-type-animation";
 import "./pages.css";
 
 export default function Joke() {
+  const [pageIntro, setPageIntro] = useState(true);
+
   const [meme, setMeme] = useState({
     topText: "THANK GOODNESS YOU'RE HOME...",
     bottomText: "...THE CHRISTMAS TREE FAINTED.",
@@ -70,37 +74,71 @@ export default function Joke() {
     }));
   }
 
-  return (
-    <main className="joke">
-      <div className="form">
-        <p className="form--p">SETUP</p>
-        <input
-          type="text"
-          placeholder="Top Text"
-          className="form--input"
-          name="topText"
-          value={meme.topText}
-          onChange={handleChange}
-        />
-        <p className="form--p">PUNCHLINE</p>
-        <input
-          type="text"
-          placeholder="Bottom Text"
-          className="form--input"
-          name="bottomText"
-          value={meme.bottomText}
-          onChange={handleChange}
-        />
-        <button className="form--button" onClick={getMemeImage}>
-          generate custom meme 🧙🏼‍♂️
-        </button>
+  function introChange() {
+    setPageIntro(!pageIntro);
+  }
+
+  const introSection = (
+    <div>
+      <div className="elf">
+        <img src="/elf/Icon7.png" className="introImg" />
+        <span>[Olga]</span>
       </div>
 
-      <div className="meme">
-        <img src={meme.randomImage} className="meme--image" />
-        <h2 className="meme--text top">{meme.topText}</h2>
-        <h2 className="meme--text bottom">{meme.bottomText}</h2>
-      </div>
-    </main>
+      <p className="introLine">
+        <TypeAnimation
+          sequence={[
+            // Same substring at the start will only be typed out once, initially
+            "welcome to the 21th! my name is Olga.",
+          ]}
+          wrapper="span"
+          speed={40}
+          style={{ fontSize: "0.8em", display: "inline-block" }}
+          repeat={Infinity}
+        />
+      </p>
+      <button onClick={introChange} className="introBtn">
+        <FaAngleDoubleRight />
+        <span className="nextBtn">next</span>
+      </button>
+    </div>
+  );
+
+  return (
+    <div className="joke">
+      {pageIntro ? (
+        <div className="intro">{introSection}</div>
+      ) : (
+        <div>
+          <div className="form">
+            <input
+              type="text"
+              placeholder="Top Text"
+              className="form--input"
+              name="topText"
+              value={meme.topText}
+              onChange={handleChange}
+            />
+            <input
+              type="text"
+              placeholder="Bottom Text"
+              className="form--input"
+              name="bottomText"
+              value={meme.bottomText}
+              onChange={handleChange}
+            />
+            <button className="form--button" onClick={getMemeImage}>
+              Generate Custom Meme 🧙🏼‍♂️
+            </button>
+          </div>
+
+          <div className="meme">
+            <img src={meme.randomImage} className="meme--image" />
+            <h2 className="meme--text top">{meme.topText}</h2>
+            <h2 className="meme--text bottom">{meme.bottomText}</h2>
+          </div>
+        </div>
+      )}
+    </div>
   );
 }

@@ -40,16 +40,16 @@ export default function Tenzies() {
 
   function generateNewDie() {
     const emojis = [
-      "../tenzies/chocolatecake.png",
-      "../tenzies/cookies.png",
-      "../tenzies/donut.png",
-      "../tenzies/strawberrycake.png",
-      "../tenzies/fruitcake.png",
-      "../tenzies/icecream.png",
-      "../tenzies/jam.png",
-      "../tenzies/jelly.png",
-      "../tenzies/roastedchicken.png",
-      "../tenzies/sushi.png",
+      "/tenzies/Icon_01.png",
+      "/tenzies/Icon_18.png",
+      "/tenzies/Icon_20.png",
+      "/tenzies/Icon_21.png",
+      "/tenzies/Icon_38.png",
+      "/tenzies/Icon_39.png",
+      "/tenzies/Icon_40.png",
+      "/tenzies/Icon_41.png",
+      "/tenzies/Icon_44.png",
+      "/tenzies/Icon_52.png",
     ];
 
     return {
